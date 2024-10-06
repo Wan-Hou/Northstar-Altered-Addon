@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heatRequirement":"heated",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "northstar:hydrocarbon",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 10,
+      "fluid": "tfmg:crude_oil",
+      "nbt": {}
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 1,
+      "fluid": "northstar:sulfuric_acid",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 1,
+      "fluid": "createindustry:sulfuric_acid",
+      "nbt": {}
+    }
+  ]
+}

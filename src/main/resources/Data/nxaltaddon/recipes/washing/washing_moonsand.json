@@ -1,0 +1,15 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "northstar:moon_sand"
+    }
+  ],
+  "results": [
+    {
+      "item": "northstar:raw_glowstone_ore",
+      "count": 1,
+      "chance": 0.2
+    }
+  ]
+}

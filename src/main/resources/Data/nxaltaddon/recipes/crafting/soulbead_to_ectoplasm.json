@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "quark:soul_bead"
+    }
+  ],
+  "result": {
+    "item": "create_netherless:ectoplasm",
+    "count": 2
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "northstar:mercury_stone"
+    }
+  ],
+  "results": [
+    {
+      "item": "northstar:tungsten_nugget",
+      "count": 1,
+      "chance": 0.02
+    },
+    {
+      "item": "northstar:tungsten_nugget",
+      "count": 1,
+      "chance": 0.002
+    },
+    {
+      "item": "northstar:raw_glowstone_ore",
+      "count": 1,
+      "chance": 0.2
+    }
+  ],
+  "processingTime": 500
+}

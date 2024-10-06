@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create:crushed_raw_iron"
+    },
+    {
+      "item": "create:crushed_raw_iron"
+    },
+    {
+      "item": "create:crushed_raw_iron"
+    },
+    {
+      "item": "create:crushed_raw_iron"
+    },
+    {
+      "item": "create:crushed_raw_iron"
+    },
+    {
+      "item": "northstar:mars_sand"
+    }
+  ],
+  "results": [
+    {
+      "item": "northstar:raw_martian_iron_ore"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "createindustry:lpg",
+      "nbt": {}
+    }
+  ],
+  "heatRequirement": "heated",
+  "processingTime": 100,
+  "results": [
+    {
+      "amount": 50,
+      "fluid": "northstar:methane"
+    },
+    {
+      "amount": 50,
+      "fluid": "createdieselgenerators:ethanol"
+    }
+  ]
+}

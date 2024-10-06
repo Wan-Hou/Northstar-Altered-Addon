@@ -4,6 +4,8 @@ plugins {
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
+    id 'com.matthewprenger.cursegradle' version '1.4.0'
 }
 
 version = mod_version
@@ -17,6 +19,13 @@ base {
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
+
+mixin{
+
+
+
+}
+
 minecraft {
     // The mappings can be changed at any time and must be in the following format.
     // Channel:   Version:
@@ -121,6 +130,31 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+
+    maven {
+        url = 'https://www.cursemaven.com'
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+
+    maven {
+        // location of the maven that hosts JEI files before January 2023
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        // location of the maven for Vazkii's mods
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        url = "https://modmaven.dev"
+    }
+
+    maven {
+        url "https://maven.tterrag.com/"
+    }
 }
 
 dependencies {
@@ -133,9 +167,37 @@ dependencies {
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
-    // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
-    // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${jei_minecraft_version}-common-api:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${jei_minecraft_version}-forge-api:${jei_version}")
+    runtimeOnly fg.deobf("mezz.jei:jei-${jei_minecraft_version}-forge:${jei_version}")
+
+    compileOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
+    implementation fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}:all") { transitive = false }
+
+    implementation fg.deobf("curse.maven:create-automate-everything-1070326:5561199")
+
+    implementation fg.deobf("curse.maven:create-industry-693815:5704103")
+
+    implementation fg.deobf("curse.maven:create-diesel-generators-869316:5401010")
+
+    implementation fg.deobf("curse.maven:create-netherless-881506:4831343")
+
+    implementation fg.deobf("curse.maven:geckolib-388172:5675221")
+    implementation fg.deobf("curse.maven:create-northstar-1071749:5611707")
+
+    //implementation fg.deobf("curse.maven:selene-499980:5785055")
+    //implementation fg.deobf("curse.maven:supplementaries-412082:5676069")
+    //implementation fg.deobf("curse.maven:amendments-896746:5697384")
+
+    implementation fg.deobf("curse.maven:balm-531761:5644976")
+    implementation fg.deobf("curse.maven:cooking-for-blockheads-231484:5735271")
+
+    implementation fg.deobf("curse.maven:zeta-968868:5597406")
+    implementation fg.deobf("curse.maven:quark-243121:5594847")
+
+    //annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
+    //testAnnotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar

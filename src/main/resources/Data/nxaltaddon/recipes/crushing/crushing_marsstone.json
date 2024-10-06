@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "northstar:mars_stone"
+    }
+  ],
+  "results": [
+    {
+      "item": "northstar:mars_gravel",
+      "count": 1
+    }
+  ],
+  "processingTime": 375
+}

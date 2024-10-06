@@ -1,0 +1,24 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " M ",
+    " J "
+  ],
+  "key": {
+    "S": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "J": {
+      "item": "supplementaries:jar"
+    }
+  },
+  "result": {
+    "item": "cookingforblockheads:milk_jar",
+    "count": 1
+  }
+}
