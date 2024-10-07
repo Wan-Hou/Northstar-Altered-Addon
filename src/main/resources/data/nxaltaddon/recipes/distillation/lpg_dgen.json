@@ -3,7 +3,7 @@
   "ingredients": [
     {
       "amount": 100,
-      "fluid": "createindustry:lpg",
+      "fluid": "tfmg:lpg",
       "nbt": {}
     }
   ],

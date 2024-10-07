@@ -1,9 +1,9 @@
 {
-  "type": "createindustry:distillation",
+  "type": "tfmg:distillation",
   "ingredients": [
     {
       "amount": 100,
-      "fluid": "createindustry:lpg",
+      "fluid": "tfmg:lpg",
       "nbt": {}
     }
   ],

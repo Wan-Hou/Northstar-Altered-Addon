@@ -10,7 +10,7 @@
   "results": [
     {
       "amount": 1,
-      "fluid": "createindustry:sulfuric_acid",
+      "fluid": "tfmg:sulfuric_acid",
       "nbt": {}
     }
   ]

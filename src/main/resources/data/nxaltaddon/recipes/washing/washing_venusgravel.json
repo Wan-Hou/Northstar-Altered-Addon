@@ -2,7 +2,7 @@
   "type": "create:splashing",
   "ingredients": [
     {
-      "item": "northstar:venus_sand"
+      "item": "northstar:venus_gravel"
     }
   ],
   "results": [

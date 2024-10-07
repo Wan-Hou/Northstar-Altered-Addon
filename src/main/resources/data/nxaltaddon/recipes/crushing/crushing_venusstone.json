@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "northstar:venus_stone"
+    }
+  ],
+  "results": [
+    {
+      "item": "northstar:venus_gravel",
+      "count": 1
+    }
+  ],
+  "processingTime": 375
+}
